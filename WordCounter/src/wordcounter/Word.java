@@ -8,23 +8,15 @@ public class Word {
   }
   
   public boolean hasMoreThan(int charCount ) {
-    boolean answer = false;
-    if (this.letters.length() > charCount) {
-      answer = true;
-    }
-    return answer;
+	return this.letters.length() > charCount;
   }
   
   public boolean containsVowels() {
-	boolean vowels = false;
-    if ((this.letters.contains("a")) ||
-    	  (this.letters.contains("e")) ||
-    	  (this.letters.contains("i")) ||
-    	  (this.letters.contains("o")) ||
-    	  (this.letters.contains("u")) ||
-    	  (this.letters.contains("y"))) {
-      vowels = true;
-    }
-    return vowels;
+    return (this.letters.contains("a")) ||
+		  (this.letters.contains("e")) ||
+		  (this.letters.contains("i")) ||
+		  (this.letters.contains("o")) ||
+		  (this.letters.contains("u")) ||
+		  (this.letters.contains("y"));
   }
 }

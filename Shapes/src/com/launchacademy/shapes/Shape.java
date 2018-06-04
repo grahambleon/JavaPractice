@@ -1,0 +1,6 @@
+package com.launchacademy.shapes;
+
+public abstract class Shape {
+  public abstract double perimeter();
+  public abstract double area();
+}
